@@ -1,0 +1,224 @@
+*{margin: 0;}
+
+html{
+    scroll-behavior: smooth;
+
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    margin: 8px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+li a:hover {
+    color: gold;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    background-color: rgb(177, 177, 177);
+
+ 
+}
+#servlist{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    margin: 8px;
+  }
+  
+.gold {
+    color: black;
+    border-left: gold;
+    border-left-style: solid;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+  }
+  
+.white {
+    color: gold;
+    border: rgb(0, 0, 0);
+    border-right-style:solid;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius:50px;
+  }
+
+  .NomeClatura{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-style: italic;
+  }
+
+.whats p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#contentholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: rgb(240, 240, 240);
+
+}
+
+#catalogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin-bottom: 40px;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.catalogoItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width: 90%;
+    border: black;
+}
+
+.listItem {
+    width: 300px;
+    height: 400px;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    margin-bottom: 20px; /* Adicionei uma margem inferior para espaçamento entre os itens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listItem img {
+    max-width: 100%;
+    max-height: 100%; /* Adicionei esta linha para garantir que a altura também seja ajustada proporcionalmente */
+}
+
+.listItem:hover {
+    box-shadow: 0 0 10px rgba(90, 90, 90, 0.8); /* Adicionei um sombreamento amarelo ao passar o mouse */
+}
+
+.listItem a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+@media only screen and (max-width: 1080px) {
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 95px;
+        background-color: rgb(177, 177, 177);
+    }
+
+    .NomeClatura{
+        display: none;
+    }
+
+    #contentholder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        background-color: rgb(240, 240, 240);
+    
+    }
+    
+    #catalogo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 720px;
+        margin-bottom: 40px;
+        background-color: rgb(240, 240, 240);
+    
+    }
+    
+    .catalogoItem{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        width: 90%;
+        border: black;
+        margin-bottom: 60px;
+    }
+    
+    .listItem {
+        width: 300px;
+        height: 400px;
+        margin: 4px;
+        padding: 4px;
+        border-radius: 5px;
+        border: 1px solid rgb(185, 185, 185);
+        margin-bottom: 20px; /* Adicionei uma margem inferior para espaçamento entre os itens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .listItem img {
+        max-width: 100%;
+        max-height: 100%; /* Adicionei esta linha para garantir que a altura também seja ajustada proporcionalmente */
+    }
+    
+    .listItem:hover {
+        box-shadow: 0 0 10px rgba(90, 90, 90, 0.8); /* Adicionei um sombreamento amarelo ao passar o mouse */
+    }
+    
+    .listItem a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+    }
+
+}
